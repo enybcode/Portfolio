@@ -4,161 +4,135 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #0d0d0d, #111827, #000000);
-    color: white;
-    line-height: 1.6;
+    font-family: Georgia, "Times New Roman", serif;
+    background: #5b3a29;
+    color: #2e2018;
+    padding: 30px;
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.85);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 1px solid #00f7ff;
-}
-
-nav {
-    max-width: 1200px;
-    margin: auto;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    color: #00f7ff;
-    font-size: 24px;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    transition: 0.3s;
-}
-
-nav ul li a:hover {
-    color: #00f7ff;
-}
-
-.hero {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    padding: 40px 20px;
-    background:
-        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)),
-        url("https://images.unsplash.com/photo-1516117172878-fd2c41f4a759?auto=format&fit=crop&w=1400&q=80");
-    background-size: cover;
-    background-position: center;
-}
-
-.hero-content {
-    max-width: 800px;
-}
-
-.hero h2 {
-    font-size: 48px;
-    margin-bottom: 20px;
-    color: #00f7ff;
-}
-
-.hero p {
-    font-size: 20px;
     margin-bottom: 30px;
+    color: #f3e7d0;
 }
 
-.btn {
+header h1 {
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+nav a {
     display: inline-block;
-    padding: 12px 25px;
-    background-color: #00f7ff;
-    color: black;
+    margin: 5px 10px;
     text-decoration: none;
-    border-radius: 8px;
+    color: #f3e7d0;
     font-weight: bold;
     transition: 0.3s;
 }
 
-.btn:hover {
-    background-color: #00b8c4;
+nav a:hover {
+    color: #ffd27d;
 }
 
-.section {
-    max-width: 1200px;
-    margin: auto;
-    padding: 80px 20px;
+.book {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.section h2 {
-    text-align: center;
+.page {
+    min-height: 85vh;
+    background: linear-gradient(to right, #f6ecd7, #efe1c4);
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.35),
+        inset 8px 0 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #d8c5a3;
+    position: relative;
+    overflow: hidden;
+}
+
+.page::before {
+    content: "";
+    position: absolute;
+    left: 50px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: rgba(120, 80, 40, 0.15);
+}
+
+.page-content {
+    padding: 60px 70px 60px 90px;
+    line-height: 1.8;
+}
+
+.page-content h2 {
     font-size: 32px;
-    margin-bottom: 40px;
-    color: #00f7ff;
+    margin-bottom: 25px;
+    color: #5a3825;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
+.page-content h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #6e4630;
 }
 
-.card {
-    background-color: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(0, 247, 255, 0.3);
-    border-radius: 12px;
-    padding: 25px;
-    box-shadow: 0 0 15px rgba(0, 247, 255, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(0, 247, 255, 0.25);
-}
-
-.card h3 {
-    color: #00f7ff;
+.page-content p {
     margin-bottom: 15px;
+    font-size: 18px;
 }
 
-.card ul {
-    padding-left: 20px;
+.cover,
+.back-cover {
+    background: linear-gradient(135deg, #6b432c, #3e2417);
+    color: #f8ead2;
+    border: 3px solid #2b170e;
 }
 
-footer {
+.cover .page-content,
+.back-cover .page-content {
+    color: #f8ead2;
+}
+
+.cover h2,
+.back-cover h2 {
+    color: #ffd89a;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
     text-align: center;
-    padding: 20px;
-    background-color: black;
-    border-top: 1px solid #00f7ff;
-    margin-top: 40px;
 }
 
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        gap: 15px;
+    body {
+        padding: 15px;
     }
 
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
+    .page-content {
+        padding: 35px 25px 35px 45px;
     }
 
-    .hero h2 {
-        font-size: 32px;
+    .page::before {
+        left: 25px;
     }
 
-    .hero p {
-        font-size: 18px;
+    .page-content h2 {
+        font-size: 26px;
+    }
+
+    .page-content p {
+        font-size: 16px;
     }
 }
