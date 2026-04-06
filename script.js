@@ -1,6 +1,7 @@
-// script.js
+const links = document.querySelectorAll("nav ul li a");
 
-function toggleMenu() {
-  const navLinks = document.getElementById("navLinks");
-  navLinks.classList.toggle("active");
+for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", function () {
+        console.log("Navigation vers : " + links[i].getAttribute("href"));
+    });
 }
