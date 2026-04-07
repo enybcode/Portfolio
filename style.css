@@ -1,138 +1,42 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    font-family: Georgia, "Times New Roman", serif;
-    background: #5b3a29;
-    color: #2e2018;
-    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
 }
 
 header {
+    background-color: black;
+    color: white;
+    padding: 20px;
     text-align: center;
-    margin-bottom: 30px;
-    color: #f3e7d0;
-}
-
-header h1 {
-    margin-bottom: 15px;
-    font-size: 32px;
 }
 
 nav a {
-    display: inline-block;
-    margin: 5px 10px;
+    color: white;
+    margin: 0 10px;
     text-decoration: none;
-    color: #f3e7d0;
-    font-weight: bold;
-    transition: 0.3s;
 }
 
-nav a:hover {
-    color: #ffd27d;
+section {
+    padding: 40px;
+    border-bottom: 1px solid black;
 }
 
-.book {
-    max-width: 900px;
-    margin: 0 auto;
+h2 {
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
 }
 
-.page {
-    min-height: 85vh;
-    background: linear-gradient(to right, #f6ecd7, #efe1c4);
-    margin-bottom: 30px;
-    border-radius: 8px;
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.35),
-        inset 8px 0 20px rgba(0, 0, 0, 0.08);
-    border: 1px solid #d8c5a3;
-    position: relative;
-    overflow: hidden;
-}
-
-.page::before {
-    content: "";
-    position: absolute;
-    left: 50px;
-    top: 0;
-    width: 2px;
-    height: 100%;
-    background: rgba(120, 80, 40, 0.15);
-}
-
-.page-content {
-    padding: 60px 70px 60px 90px;
-    line-height: 1.8;
-}
-
-.page-content h2 {
-    font-size: 32px;
-    margin-bottom: 25px;
-    color: #5a3825;
-}
-
-.page-content h3 {
+.projet {
     margin-top: 20px;
-    margin-bottom: 10px;
-    color: #6e4630;
+    padding: 10px;
+    border: 1px solid black;
 }
 
-.page-content p {
-    margin-bottom: 15px;
-    font-size: 18px;
-}
-
-.cover,
-.back-cover {
-    background: linear-gradient(135deg, #6b432c, #3e2417);
-    color: #f8ead2;
-    border: 3px solid #2b170e;
-}
-
-.cover .page-content,
-.back-cover .page-content {
-    color: #f8ead2;
-}
-
-.cover h2,
-.back-cover h2 {
-    color: #ffd89a;
-}
-
-.center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 85vh;
+footer {
+    background-color: black;
+    color: white;
     text-align: center;
-}
-
-@media (max-width: 768px) {
-    body {
-        padding: 15px;
-    }
-
-    .page-content {
-        padding: 35px 25px 35px 45px;
-    }
-
-    .page::before {
-        left: 25px;
-    }
-
-    .page-content h2 {
-        font-size: 26px;
-    }
-
-    .page-content p {
-        font-size: 16px;
-    }
+    padding: 10px;
 }
