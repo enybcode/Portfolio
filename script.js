@@ -1,7 +1,7 @@
-const liens = document.querySelectorAll("nav a");
+const links = document.querySelectorAll("nav ul li a");
 
-liens.forEach(function(lien) {
-    lien.addEventListener("click", function() {
-        console.log("Navigation vers " + lien.getAttribute("href"));
+for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", function () {
+        console.log("Navigation vers : " + links[i].getAttribute("href"));
     });
-});
+}
