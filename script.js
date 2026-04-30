@@ -1,7 +1,19 @@
-const links = document.querySelectorAll("nav ul li a");
+const elements = document.querySelectorAll(
+    '.section, .card, .project, .timeline article, .profile-card, .block, .info-box'
+);
 
-for (let i = 0; i < links.length; i++) {
-    links[i].addEventListener("click", function () {
-        console.log("Navigation vers : " + links[i].getAttribute("href"));
+elements.forEach(element => {
+    element.classList.add('reveal');
+});
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
     });
-}
+}, {
+    threshold: 0.12
+});
+
+elements.forEach(element => observer.observe(element));

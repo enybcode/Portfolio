@@ -3,177 +3,302 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Enzo Bertrand</title>
+    <title>Portfolio — Enzo Bertrand</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <h1 class="logo">Enzo Bertrand</h1>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#apropos">À propos</a></li>
-                <li><a href="#parcours">Parcours</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header class="topbar">
+    <a href="#accueil" class="logo">ENZO_BERTRAND</a>
 
+    <nav>
+        <a href="#profil">Profil</a>
+        <a href="#competences">Compétences</a>
+        <a href="#projets">Projets</a>
+        <a href="#experience">Expérience</a>
+        <a href="#bts">BTS SIO</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
     <section id="accueil" class="hero">
+        <div class="grid-background"></div>
+
         <div class="hero-content">
-            <h2>Bienvenue sur mon portfolio</h2>
-            <p>
-                Je m'appelle <strong>Enzo Bertrand</strong>, étudiant en <strong>BTS SIO option SLAM</strong>,
-                passionné par le <strong>développement</strong>, le <strong>game design</strong>
-                et la création de projets interactifs.
+            <p class="label">Portfolio BTS SIO SLAM</p>
+            <h1>Enzo<br>Bertrand</h1>
+            <h2>Étudiant en développement d’applications</h2>
+
+            <p class="intro">
+                Je suis étudiant en BTS SIO option SLAM. J’apprends à créer des sites web,
+                des applications, des bases de données et des projets concrets. Je m’intéresse
+                particulièrement au développement web, au game design et aux projets interactifs.
             </p>
-            <a href="#projets" class="btn">Voir mes projets</a>
+
+            <div class="hero-buttons">
+                <a href="#projets" class="btn btn-white">Voir mes projets</a>
+                <a href="#contact" class="btn btn-outline">Me contacter</a>
+            </div>
         </div>
+
+        <aside class="profile-card">
+            <div class="profile-title">IDENTITÉ</div>
+            <div class="profile-monogram">EB</div>
+            <p class="profile-name">Enzo Bertrand</p>
+            <p class="profile-job">BTS SIO SLAM — 2024 / 2026</p>
+
+            <div class="profile-list">
+                <span>Développement web</span>
+                <span>Base de données</span>
+                <span>Support informatique</span>
+                <span>Game design</span>
+            </div>
+        </aside>
     </section>
 
-    <section id="apropos" class="section">
-        <h2>À propos de moi</h2>
-        <div class="card">
-            <p>
-                Je suis une personne enthousiaste, patiente et curieuse. J’aime apprendre,
-                découvrir de nouvelles choses et progresser à travers des projets concrets.
-            </p>
-            <p>
-                Je suis passionné par le <strong>game design</strong>, la création d’univers,
-                les mécaniques de jeu et le développement web. J’aime autant imaginer une idée
-                que la rendre réelle avec du code.
-            </p>
-            <p>
-                Je parle <strong>très bien français</strong> et je parle aussi <strong>un peu anglais</strong>.
-            </p>
+    <section id="profil" class="section">
+        <div class="section-head">
+            <p class="section-number">01</p>
+            <h2>Présentation</h2>
         </div>
-    </section>
 
-    <section id="parcours" class="section">
-        <h2>Mon parcours</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Formation</h3>
+        <div class="two-columns">
+            <div class="block">
+                <h3>Qui suis-je ?</h3>
                 <p>
-                    Je suis actuellement en <strong>BTS SIO option SLAM</strong>, une formation
-                    orientée vers le développement d’applications, les bases de données
-                    et la programmation.
+                    Je m’appelle Enzo Bertrand. Je suis en BTS SIO option SLAM à l’ESTIAM.
+                    Je suis curieux, patient et motivé. J’aime apprendre en pratiquant,
+                    surtout quand le projet a un vrai but.
+                </p>
+                <p>
+                    J’aime beaucoup le développement, mais aussi le game design. J’aime réfléchir
+                    à une idée, imaginer comment elle fonctionne, puis essayer de la transformer
+                    en projet réel avec du code.
                 </p>
             </div>
 
-            <div class="card">
-                <h3>Baccalauréat</h3>
-                <p>
-                    J’ai obtenu un <strong>Bac STI2D</strong>, ce qui m’a permis de développer
-                    une première approche technique, logique et concrète des systèmes
-                    et de l’informatique.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Alternance</h3>
-                <p>
-                    Je travaille chez <strong>Segula Technologies</strong> en tant que
-                    <strong>support informatique</strong>. Cette expérience me permet d’aider
-                    les utilisateurs, résoudre des problèmes techniques et découvrir
-                    le fonctionnement d’un environnement professionnel.
-                </p>
+            <div class="info-box">
+                <div><strong>Formation</strong><span>BTS SIO SLAM</span></div>
+                <div><strong>École</strong><span>ESTIAM</span></div>
+                <div><strong>Ville</strong><span>Élancourt</span></div>
+                <div><strong>Année</strong><span>2026</span></div>
+                <div><strong>Alternance</strong><span>Segula Technologies</span></div>
+                <div><strong>Langues</strong><span>Français, anglais débutant</span></div>
             </div>
         </div>
     </section>
 
-    <section id="competences" class="section">
-        <h2>Mes qualités et compétences</h2>
-        <div class="grid">
-            <div class="card">
+    <section id="competences" class="section inverse">
+        <div class="section-head">
+            <p class="section-number">02</p>
+            <h2>Compétences</h2>
+        </div>
+
+        <div class="cards">
+            <article class="card">
+                <h3>Développement web</h3>
+                <p>Création de pages web simples, propres et organisées.</p>
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>PHP</span>
+                </div>
+            </article>
+
+            <article class="card">
+                <h3>Base de données</h3>
+                <p>Création de tables, gestion des utilisateurs et requêtes SQL.</p>
+                <div class="tags">
+                    <span>MySQL</span>
+                    <span>SQL</span>
+                    <span>phpMyAdmin</span>
+                    <span>MCD</span>
+                </div>
+            </article>
+
+            <article class="card">
+                <h3>Outils</h3>
+                <p>Utilisation d’outils pour coder, tester et versionner mes projets.</p>
+                <div class="tags">
+                    <span>VS Code</span>
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>XAMPP</span>
+                </div>
+            </article>
+
+            <article class="card">
                 <h3>Qualités</h3>
-                <ul>
-                    <li>Enthousiaste</li>
-                    <li>Patient</li>
-                    <li>Curieux</li>
-                    <li>Motivé pour apprendre</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3>Compétences techniques</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Bases de données</li>
-                    <li>Compréhension de code existant</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <h3>Langues</h3>
-                <ul>
-                    <li>Français : très bon niveau</li>
-                    <li>Anglais : niveau débutant / intermédiaire</li>
-                </ul>
-            </div>
+                <p>Qualités utiles dans le développement et le travail en équipe.</p>
+                <div class="tags">
+                    <span>Curieux</span>
+                    <span>Patient</span>
+                    <span>Créatif</span>
+                    <span>Motivé</span>
+                </div>
+            </article>
         </div>
     </section>
 
     <section id="projets" class="section">
-        <h2>Mes projets</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Projet Webtoon</h3>
+        <div class="section-head">
+            <p class="section-number">03</p>
+            <h2>Projets réalisés</h2>
+        </div>
+
+        <div class="project-list">
+            <article class="project">
+                <div class="project-number">01</div>
+                <div>
+                    <h3>Projet Webtoon</h3>
+                    <p>
+                        Application web permettant de gérer des webtoons. L’utilisateur peut
+                        se connecter, importer des webtoons, les noter et les ajouter à sa liste.
+                    </p>
+                    <ul>
+                        <li>Création d’un système de connexion et d’inscription</li>
+                        <li>Utilisation d’une base de données MySQL</li>
+                        <li>Organisation des fichiers HTML, CSS, PHP et JS</li>
+                    </ul>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project">
+                <div class="project-number">02</div>
+                <div>
+                    <h3>Projet Porte-Monnaie</h3>
+                    <p>
+                        Application en C# pour gérer son argent. Le but est de suivre les revenus,
+                        les dépenses et le solde d’un utilisateur.
+                    </p>
+                    <ul>
+                        <li>Ajout de transactions</li>
+                        <li>Calcul automatique du solde</li>
+                        <li>Affichage d’un historique simple</li>
+                    </ul>
+                    <div class="tags">
+                        <span>C#</span>
+                        <span>Application</span>
+                        <span>Gestion</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project">
+                <div class="project-number">03</div>
+                <div>
+                    <h3>Mini-jeu et game design</h3>
+                    <p>
+                        Projet personnel lié au jeu vidéo, avec des essais autour d’un mini-jeu,
+                        d’une flamme et de modifications graphiques. Ce projet m’a permis de mieux
+                        comprendre la logique d’un jeu.
+                    </p>
+                    <ul>
+                        <li>Travail sur une mécanique de jeu</li>
+                        <li>Réflexion sur l’ambiance et l’expérience utilisateur</li>
+                        <li>Découverte de la modification d’un projet existant</li>
+                    </ul>
+                    <div class="tags">
+                        <span>Game Design</span>
+                        <span>Créativité</span>
+                        <span>Projet perso</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="experience" class="section inverse">
+        <div class="section-head">
+            <p class="section-number">04</p>
+            <h2>Expérience professionnelle</h2>
+        </div>
+
+        <div class="timeline">
+            <article>
+                <span class="date">2024 — 2026</span>
+                <h3>Alternance — Segula Technologies</h3>
                 <p>
-                    Développement d’une application web permettant d’importer des webtoons,
-                    de les noter et de les organiser dans une liste de lecture.
+                    Je travaille dans un environnement professionnel où je participe au support
+                    informatique. J’aide les utilisateurs, je remonte les problèmes et je découvre
+                    le fonctionnement d’un service informatique en entreprise.
+                </p>
+            </article>
+
+            <article>
+                <span class="date">Projets personnels</span>
+                <h3>Développement et création</h3>
+                <p>
+                    En parallèle de ma formation, je travaille sur des projets personnels pour progresser :
+                    portfolio, application web, projet de gestion et idées liées au jeu vidéo.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section id="bts" class="section">
+        <div class="section-head">
+            <p class="section-number">05</p>
+            <h2>BTS SIO SLAM</h2>
+        </div>
+
+        <div class="two-columns">
+            <div class="block">
+                <h3>Qu’est-ce que le BTS SIO ?</h3>
+                <p>
+                    Le BTS SIO forme aux métiers de l’informatique. L’option SLAM est orientée
+                    vers le développement d’applications, la programmation, les bases de données
+                    et la maintenance de solutions logicielles.
                 </p>
             </div>
 
-            <div class="card">
-                <h3>Projet Porte-Monnaie</h3>
-                <p>
-                    Création d’une application de gestion d’argent pour suivre les revenus,
-                    les dépenses et le solde.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Mini-jeu</h3>
-                <p>
-                    Pendant mon alternance, j’ai travaillé sur un petit jeu lié a une petite flamme,
-                    avec une modification autour d’un effet d'ombre. Cela m’a permis
-                    de manipuler un projet existant et de mieux comprendre la logique du code.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Passion game design</h3>
-                <p>
-                    Le game design m’intéresse particulièrement, car j’aime imaginer des mécaniques,
-                    des univers, des interactions et réfléchir à l’expérience utilisateur dans un jeu.
-                    Exemple je suis en train de développer un mod sur minecraft de A à Z ou j'apprend la 
-                    Modélisation etc.
-                </p>
+            <div class="block">
+                <h3>Compétences BTS travaillées</h3>
+                <ul class="clean-list">
+                    <li>Gérer le patrimoine informatique</li>
+                    <li>Répondre aux incidents et aux demandes d’assistance</li>
+                    <li>Développer la présence en ligne d’une organisation</li>
+                    <li>Travailler en mode projet</li>
+                    <li>Mettre à disposition un service informatique</li>
+                    <li>Organiser son développement professionnel</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section">
-        <h2>Contact</h2>
-        <div class="card">
-            <p>Merci d’avoir visité mon portfolio.</p>
-            <p>
-                Je suis toujours prêt à apprendre, progresser et découvrir de nouvelles opportunités.
-            </p>
+    <section id="contact" class="section contact">
+        <div class="section-head">
+            <p class="section-number">06</p>
+            <h2>Contact</h2>
+        </div>
+
+        <p class="contact-intro">
+            Ce portfolio présente mon parcours, mes compétences et mes projets réalisés
+            dans le cadre de mon BTS SIO option SLAM.
+        </p>
+
+        <div class="contact-box">
             <p><strong>Nom :</strong> Enzo Bertrand</p>
             <p><strong>Formation :</strong> BTS SIO SLAM</p>
+            <p><strong>Ville :</strong> Élancourt</p>
+            <p><strong>GitHub :</strong> <a href="https://github.com/enybcode" target="_blank">github.com/enybcode</a></p>
+            <p><strong>Email :</strong> <a href="mailto:enzo.berbertrand@gmail.com">enzo.berbertrand@gmail.com</a></p>
         </div>
     </section>
+</main>
 
-    <footer>
-        <p>© 2026 - Portfolio de Enzo Bertrand</p>
-    </footer>
+<footer>
+    <p>© 2026 — Enzo Bertrand — Portfolio BTS SIO SLAM</p>
+</footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
