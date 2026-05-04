@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E/B</title>
-    <link rel="icon" type="image/png" href="EB.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="assets/images/EB.png">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
@@ -16,10 +16,12 @@
         <a href="#profil">Profil</a>
         <a href="#competences">Compétences</a>
         <a href="#projets">Projets</a>
+        <a href="#competences-bts">Référentiel</a>
         <a href="#experience">Expérience</a>
         <a href="#bts">BTS SIO</a>
+        <a href="#veille">Veille</a>
         <a href="#contact">Contact</a>
-    </nav>
+</nav>
 </header>
 
 <main>
@@ -40,12 +42,15 @@
             <div class="hero-buttons">
                 <a href="#projets" class="btn btn-white">Voir mes projets</a>
                 <a href="#contact" class="btn btn-outline">Me contacter</a>
+                <button type="button" class="btn btn-outline" id="openCvBtn">CV</button>
             </div>
         </div>
 
         <aside class="profile-card">
             <div class="profile-title">IDENTITÉ</div>
-            <div class="profile-monogram">EB</div>
+            <div class="profile-monogram">
+                <img src="assets/images/photo-profil.jpeg" alt="Photo de Enzo Bertrand">
+            </div>
             <p class="profile-name">Enzo Bertrand</p>
             <p class="profile-job">BTS SIO SLAM — 2024 / 2026</p>
 
@@ -57,8 +62,7 @@
             </div>
         </aside>
     </section>
-
-    <section id="profil" class="section">
+<section id="profil" class="section">
         <div class="section-head">
             <p class="section-number">01</p>
             <h2>Présentation</h2>
@@ -143,111 +147,428 @@
         </div>
     </section>
 
+
     <section id="projets" class="section">
         <div class="section-head">
             <p class="section-number">03</p>
             <h2>Projets réalisés</h2>
         </div>
 
-        <div class="project-list">
-            <article class="project">
-                <div class="project-number">01</div>
-                <div>
-                    <h3>Projet Webtoon</h3>
-                    <p>
-                        Application web permettant de gérer des webtoons. L’utilisateur peut
-                        se connecter, importer des webtoons, les noter et les ajouter à sa liste.
-                    </p>
-                    <ul>
-                        <li>Création d’un système de connexion et d’inscription</li>
-                        <li>Utilisation d’une base de données MySQL</li>
-                        <li>Organisation des fichiers HTML, CSS, PHP et JS</li>
-                    </ul>
-                    <div class="tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>PHP</span>
-                        <span>MySQL</span>
-                    </div>
-                </div>
-            </article>
+        <div class="project-category">
+            <div class="category-title">Projets de formation - BTS SIO SLAM</div>
 
-            <article class="project">
-                <div class="project-number">02</div>
-                <div>
-                    <h3>Projet Porte-Monnaie</h3>
-                    <p>
-                        Application en C# pour gérer son argent. Le but est de suivre les revenus,
-                        les dépenses et le solde d’un utilisateur.
-                    </p>
-                    <ul>
-                        <li>Ajout de transactions</li>
-                        <li>Calcul automatique du solde</li>
-                        <li>Affichage d’un historique simple</li>
-                    </ul>
-                    <div class="tags">
-                        <span>C#</span>
-                        <span>Application</span>
-                        <span>Gestion</span>
-                    </div>
-                </div>
-            </article>
+            <div class="project-list">
+                <article class="project">
+                    <div class="project-number">01</div>
+                    <div>
+                        <h3>Projet Webtoon</h3>
+                        <p>
+                            Application web réalisée dans le cadre de ma formation. L'utilisateur peut
+                            se connecter, importer des webtoons, les noter et les ajouter à sa liste.
+                        </p>
+                        <ul>
+                            <li>Création d'un système de connexion et d'inscription</li>
+                            <li>Utilisation d'une base de données MySQL</li>
+                            <li>Organisation des fichiers HTML, CSS, PHP et JavaScript</li>
+                            <li>Travail sur la structure d'une application web complète</li>
+                        </ul>
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+                        
+                        <div class="project-mini-doc">
+                            <p class="mini-doc-title">Documentation rapide</p>
+                            <div class="mini-doc-grid">
+                                <div>
+                                    <strong>Objectif</strong>
+                                    <p>Gérer une bibliothèque de webtoons avec ajout, recherche, modification, suppression et suivi d’état.</p>
+                                </div>
+                                <div>
+                                    <strong>Fonctionnalités</strong>
+                                    <p>CRUD, base locale, interface graphique, gestion des informations principales d’un webtoon.</p>
+                                </div>
+                                <div>
+                                    <strong>Compétences</strong>
+                                    <p>Développement applicatif, gestion des données, organisation du projet et tests fonctionnels.</p>
+                                </div>
+                                <div>
+                                    <strong>Bilan</strong>
+                                    <p>Ce projet m’a aidé à mieux structurer une application complète et à relier interface, code et données.</p>
+                                </div>
+                            </div>
+                        </div>
 
-            <article class="project">
-                <div class="project-number">03</div>
-                <div>
-                    <h3>Mini-jeu et game design</h3>
-                    <p>
-                        Projet personnel lié au jeu vidéo, avec des essais autour d’un mini-jeu,
-                        d’une flamme et de modifications graphiques. Ce projet m’a permis de mieux
-                        comprendre la logique d’un jeu.
-                    </p>
-                    <ul>
-                        <li>Travail sur une mécanique de jeu</li>
-                        <li>Réflexion sur l’ambiance et l’expérience utilisateur</li>
-                        <li>Découverte de la modification d’un projet existant</li>
-                    </ul>
-                    <div class="tags">
-                        <span>Game Design</span>
-                        <span>Créativité</span>
-                        <span>Projet perso</span>
+                        <a class="doc-link" href="docs/projet_webtoon.pdf" target="_blank">Voir le PDF officiel E6</a>
                     </div>
-                </div>
-            </article>
+                </article>
+
+                <article class="project">
+                    <div class="project-number">02</div>
+                    <div>
+                        <h3>Projet Porte-Monnaie</h3>
+                        <p>
+                            Application en C# permettant de suivre les revenus, les dépenses
+                            et le solde d'un utilisateur.
+                        </p>
+                        <ul>
+                            <li>Ajout de transactions</li>
+                            <li>Calcul automatique du solde</li>
+                            <li>Affichage d'un historique simple</li>
+                            <li>Réflexion sur l'organisation des données</li>
+                        </ul>
+                        <div class="tags">
+                            <span>C#</span>
+                            <span>Application</span>
+                            <span>Gestion</span>
+                        </div>
+                        
+                        <div class="project-mini-doc">
+                            <p class="mini-doc-title">Documentation rapide</p>
+                            <div class="mini-doc-grid">
+                                <div>
+                                    <strong>Objectif</strong>
+                                    <p>Créer une application de gestion de porte-monnaie pour suivre revenus, dépenses et solde.</p>
+                                </div>
+                                <div>
+                                    <strong>Fonctionnalités</strong>
+                                    <p>Ajout de transactions, catégories, historique, calcul automatique du solde et gestion des données.</p>
+                                </div>
+                                <div>
+                                    <strong>Compétences</strong>
+                                    <p>C#, logique applicative, base de données, CRUD, tests de calcul et interface utilisateur.</p>
+                                </div>
+                                <div>
+                                    <strong>Bilan</strong>
+                                    <p>Ce projet m’a permis de progresser sur une application de gestion et sur la fiabilité des données affichées.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="doc-link" href="docs/projet_porte_monnaie.pdf" target="_blank">Voir le PDF officiel E6</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="project-category">
+            <div class="category-title">Projets personnels</div>
+
+            <div class="project-list">
+                
+                <article class="project">
+                    <div class="project-number">03</div>
+                    <div>
+                        <h3 class="project-title-with-icon">Mini-jeu et game design <img src="assets/images/flamme-grise.gif" alt="Animation flamme grise"></h3>
+                        <p>
+                            Projet personnel lié au jeu vidéo, avec des essais autour d'un mini-jeu,
+                            d'une flamme et de modifications graphiques. Ce projet m'a permis de mieux
+                            comprendre la logique d'un jeu.
+                        </p>
+                        <ul>
+                            <li>Travail sur une mécanique de jeu</li>
+                            <li>Réflexion sur l'ambiance et l'expérience utilisateur</li>
+                            <li>Découverte de la modification d'un projet existant</li>
+                        </ul>
+                        <div class="tags">
+                            <span>Game Design</span>
+                            <span>Créativité</span>
+                            <span>Projet perso</span>
+                        </div>
+
+                        <div class="project-image-frame">
+                            <p class="image-frame-title">Fiche technique - petite flamme grise</p>
+                            <img src="assets/images/fiche-flamme-grise.png" alt="Fiche technique de la petite flamme grise">
+                        </div>
+
+                        <div class="project-action-frame">
+                            <p class="image-frame-title">Projet expérimental - Space Invader</p>
+                            <div class="project-action-body">
+                                <div>
+                                    <h4 class="space-title">Debug Invaders</h4>
+                                    <p>
+                                        Petit bonus interactif intégré au portfolio. Ce mini-jeu reprend un esprit
+                                        arcade inspiré de Space Invader, dans une version cohérente avec mon univers
+                                        graphique et mon intérêt pour le game design.
+                                    </p>
+                                </div>
+
+                                <div class="space-action-zone">
+                                    <span>Mini-jeu jouable</span>
+                                    <button type="button" class="inline-game-btn" id="openGameBtn">Jouer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="project">
+                    <div class="project-number">04</div>
+                    <div>
+                        <h3>Mod Minecraft</h3>
+                        <p>
+                            Projet personnel de modification d'un jeu existant. Ce projet m'a permis
+                            de découvrir la logique du modding, la modification de ressources et
+                            l'ajout d'éléments personnalisés dans un environnement de jeu.
+                        </p>
+                        <ul>
+                            <li>Analyse du fonctionnement d'un projet existant</li>
+                            <li>Modification d'éléments visuels et techniques</li>
+                            <li>Travail sur la logique de jeu et l'expérience utilisateur</li>
+                            <li>Développement de ma créativité autour du game design</li>
+                        </ul>
+                        <div class="tags">
+                            <span>Minecraft</span>
+                            <span>Modding</span>
+                            <span>Game Design</span>
+                            <span>Projet perso</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </div>
     </section>
 
-    <section id="experience" class="section inverse">
+
+    <section id="competences-bts" class="section bts-skills-section">
         <div class="section-head">
-            <p class="section-number">04</p>
+            <p class="section-number">05</p>
+            <h2>Compétences BTS associées</h2>
+        </div>
+
+        <div class="block">
+            <h3>Objectif de cette section</h3>
+            <p>
+                Cette partie permet de relier mes projets, mes missions en entreprise et ma veille
+                technologique aux compétences attendues dans le référentiel du BTS SIO option SLAM.
+                Elle aide à montrer clairement ce que chaque réalisation m’a permis de travailler.
+            </p>
+        </div>
+
+        <div class="bts-skill-table">
+            <div class="bts-skill-row bts-skill-head">
+                <span>Réalisation / Mission</span>
+                <span>Compétences BTS travaillées</span>
+                <span>Preuves / documents</span>
+            </div>
+
+            <div class="bts-skill-row">
+                <span>Projet Webtoon</span>
+                <span>
+                    Concevoir et développer une solution applicative<br>
+                    Gérer les données<br>
+                    Travailler en mode projet
+                </span>
+                <span>
+                    PDF descriptif du projet<br>
+                    Lien GitHub<br>
+                    Base de données / CRUD<br>
+                    Captures d’écran du projet
+                </span>
+            </div>
+
+            <div class="bts-skill-row">
+                <span>Projet Porte-Monnaie</span>
+                <span>
+                    Concevoir et développer une solution applicative<br>
+                    Assurer la maintenance corrective ou évolutive<br>
+                    Gérer les données
+                </span>
+                <span>
+                    PDF descriptif du projet<br>
+                    Code C#<br>
+                    Fonctionnalités de calcul du solde<br>
+                    Historique des transactions
+                </span>
+            </div>
+
+            <div class="bts-skill-row">
+                <span>Alternance Segula Technologies</span>
+                <span>
+                    Répondre aux incidents et aux demandes d’assistance<br>
+                    Gérer le patrimoine informatique<br>
+                    Accompagner les utilisateurs<br>
+                    Mettre à disposition un service informatique
+                </span>
+                <span>
+                    Tickets anonymisés<br>
+                    Exemples de diagnostics matériel / logiciel<br>
+                    Participation migration Windows 11<br>
+                    Participation migration Microsoft vers Google
+                </span>
+            </div>
+
+            <div class="bts-skill-row">
+                <span>Banc de masterisation Windows 11</span>
+                <span>
+                    Mettre à disposition un service informatique<br>
+                    Gérer le patrimoine informatique<br>
+                    Travailler en mode projet
+                </span>
+                <span>
+                    Mise en place du boot Ethernet<br>
+                    Préparation de postes<br>
+                    Procédure de masterisation<br>
+                    Tests de déploiement Windows 11
+                </span>
+            </div>
+
+            <div class="bts-skill-row">
+                <span>Veille technologique</span>
+                <span>
+                    Organiser son développement professionnel<br>
+                    Mettre en place une veille informationnelle<br>
+                    Sélectionner des informations pertinentes
+                </span>
+                <span>
+                    Sources suivies avec notifications<br>
+                    Articles récents retenus<br>
+                    Frise de suivi dans le temps<br>
+                    Résumé des informations apprises
+                </span>
+            </div>
+
+            <div class="bts-skill-row">
+                <span>Projets personnels : mini-jeu et mod Minecraft</span>
+                <span>
+                    Développer sa créativité technique<br>
+                    Expérimenter des solutions applicatives<br>
+                    Comprendre la logique d’un projet existant
+                </span>
+                <span>
+                    Animation de flamme<br>
+                    Fiche technique<br>
+                    Projet de mod Minecraft<br>
+                    Travail personnel en game design
+                </span>
+            </div>
+        </div>
+
+        
+        <div class="official-skill-doc block">
+            <h3>Document officiel des compétences</h3>
+            <p>
+                Cette synthèse présente les compétences de façon lisible pour le portfolio. Le document officiel
+                du BTS SIO, avec les cases de validation, doit rester disponible à part pour le jury.
+            </p>
+            <a class="doc-link disabled-link" href="#" aria-disabled="true">Tableau officiel à ajouter (.xlsx)</a>
+        </div>
+
+
+        <div class="bts-skills-summary block">
+            <h3>Bilan</h3>
+            <p>
+                Mes projets de formation montrent mes compétences en développement et en gestion de données.
+                Mon alternance me permet de travailler la partie support, diagnostic, migration et accompagnement
+                utilisateur. Ma veille technologique montre ma capacité à suivre l’évolution d’un sujet technique
+                en lien avec mes centres d’intérêt.
+            </p>
+        </div>
+    </section>
+
+
+
+    <section id="experience" class="section inverse enterprise-section">
+        <div class="section-head">
+            <p class="section-number">06</p>
             <h2>Expérience professionnelle</h2>
         </div>
 
-        <div class="timeline">
-            <article>
-                <span class="date">2024 — 2026</span>
-                <h3>Alternance — Segula Technologies</h3>
+        <div class="enterprise-intro block">
+            <span class="date">2024 - 2026</span>
+            <h3>Alternance - Support informatique - Segula Technologies</h3>
+            <p>
+                En entreprise, je participe au support informatique, aux migrations et à la préparation des postes.
+                J’interviens sur des demandes utilisateurs, des incidents matériels et logiciels, ainsi que sur
+                des projets techniques liés au parc informatique.
+            </p>
+        </div>
+
+        <div class="enterprise-mission-list">
+            <article class="mission-proof-card">
+                <p class="enterprise-label">Mission 01</p>
+                <h3>Migration Microsoft vers Google</h3>
                 <p>
-                    Je travaille dans un environnement professionnel où je participe au support
-                    informatique. J’aide les utilisateurs, je remonte les problèmes et je découvre
-                    le fonctionnement d’un service informatique en entreprise.
+                    Participation à la migration vers l’environnement Google et accompagnement des utilisateurs
+                    pendant la transition.
                 </p>
+                <ul class="experience-list">
+                    <li>Aide sur les accès aux outils Google</li>
+                    <li>Remontée des incidents liés aux comptes et aux droits</li>
+                    <li>Support utilisateur pendant la période de changement</li>
+                    <li>Suivi des demandes liées à la migration</li>
+                </ul>
             </article>
 
-            <article>
-                <span class="date">Projets personnels</span>
-                <h3>Développement et création</h3>
+            <article class="mission-proof-card">
+                <p class="enterprise-label">Mission 02</p>
+                <h3>Migration Windows 11</h3>
                 <p>
-                    En parallèle de ma formation, je travaille sur des projets personnels pour progresser :
-                    portfolio, application web, projet de gestion et idées liées au jeu vidéo.
+                    Participation à la migration de postes vers Windows 11, avec vérification du bon fonctionnement
+                    après installation.
                 </p>
+                <ul class="experience-list">
+                    <li>Préparation de postes avant migration</li>
+                    <li>Vérification du démarrage après installation</li>
+                    <li>Contrôle des accès utilisateur et applications</li>
+                    <li>Signalement des problèmes rencontrés</li>
+                </ul>
+            </article>
+
+            <article class="mission-proof-card">
+                <p class="enterprise-label">Mission 03</p>
+                <h3>Banc de masterisation Windows 11</h3>
+                <p>
+                    Mise en place et utilisation d’un banc de masterisation pour installer Windows 11
+                    sur des postes via boot Ethernet / démarrage réseau.
+                </p>
+                <ul class="experience-list">
+                    <li>Utilisation du boot Ethernet</li>
+                    <li>Préparation des postes pour l’installation</li>
+                    <li>Vérification du déroulement de la masterisation</li>
+                    <li>Contrôle final du poste après installation</li>
+                </ul>
+            </article>
+
+            <article class="mission-proof-card">
+                <p class="enterprise-label">Mission 04</p>
+                <h3>Tickets support quotidiens</h3>
+                <p>
+                    Traitement de tickets support : analyse de la demande, récupération du contexte,
+                    test de solutions et transmission si nécessaire.
+                </p>
+                <ul class="experience-list">
+                    <li>Analyse des demandes utilisateurs</li>
+                    <li>Rédaction de tickets clairs avec contexte et tests réalisés</li>
+                    <li>Diagnostic de problèmes de session, messagerie, compte ou application</li>
+                    <li>Escalade vers le service adapté si nécessaire</li>
+                </ul>
+            </article>
+
+            <article class="mission-proof-card">
+                <p class="enterprise-label">Mission 05</p>
+                <h3>Diagnostic matériel et logiciel</h3>
+                <p>
+                    Intervention sur des postes pour localiser un problème physique ou logiciel et proposer
+                    une résolution adaptée.
+                </p>
+                <ul class="experience-list">
+                    <li>Démontage de postes informatiques</li>
+                    <li>Vérification des composants et branchements</li>
+                    <li>Tests pour distinguer panne matérielle et problème logiciel</li>
+                    <li>Remise en état ou orientation vers la bonne solution</li>
+                </ul>
             </article>
         </div>
-    </section>
+</section>
+
 
     <section id="bts" class="section">
         <div class="section-head">
-            <p class="section-number">05</p>
+            <p class="section-number">07</p>
             <h2>BTS SIO SLAM</h2>
         </div>
 
@@ -273,11 +594,279 @@
                 </ul>
             </div>
         </div>
+
+        <div class="school-section">
+            <div class="category-title">Mon école : ÉSTIAM</div>
+
+            <div class="school-grid">
+                <article class="school-card">
+                    <h3>École d’informatique appliquée</h3>
+                    <p>
+                        ÉSTIAM est une école spécialisée dans l’informatique appliquée aux métiers.
+                        Le parcours proposé peut aller jusqu’à Bac+5, avec une logique progressive
+                        et professionnalisante.
+                    </p>
+                </article>
+
+                <article class="school-card">
+                    <h3>BTS SIO SLAM</h3>
+                    <p>
+                        Le BTS SIO SLAM est une formation Bac+2 sur 24 mois. Elle prépare aux métiers
+                        liés à la conception, au développement et à la maintenance de programmes applicatifs.
+                    </p>
+                </article>
+
+                <article class="school-card">
+                    <h3>Alternance</h3>
+                    <p>
+                        La formation peut se faire en alternance dès la première année. Cela permet
+                        de compléter les cours par une expérience professionnelle en entreprise.
+                    </p>
+                </article>
+            </div>
+
+            <div class="school-program">
+                <div class="veille-table-title">Contenu de formation utile pour mon parcours SLAM</div>
+
+                <div class="school-row">
+                    <span>1re année</span>
+                    <p>
+                        Bases professionnelles et techniques : support informatique, SQL, JavaScript,
+                        HTML/CSS, programmation orientée objet, gestion de projet, cybersécurité
+                        et mathématiques pour l’informatique.
+                    </p>
+                </div>
+
+                <div class="school-row">
+                    <span>2e année SLAM</span>
+                    <p>
+                        Approfondissement technique : conception et développement d’applications,
+                        JavaScript avancé, développement .NET / C#, Java avancé, SQL avancé,
+                        Python avancé et frameworks PHP.
+                    </p>
+                </div>
+
+                <div class="school-row">
+                    <span>Objectif</span>
+                    <p>
+                        Développer des compétences professionnelles en développement, bases de données,
+                        gestion de projet, cybersécurité et professionnalisation en entreprise.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
     </section>
+
+
+
+
+
+    <section id="veille" class="section inverse veille-section">
+        <div class="section-head">
+            <p class="section-number">08</p>
+            <h2>Veille technologique</h2>
+        </div>
+
+        <div class="veille-intro block">
+            <h3>Sujet de veille</h3>
+            <p>
+                Ma veille technologique porte sur <strong>Java et le modding Minecraft</strong>.
+                Ce sujet est lié à mon intérêt pour le développement, le jeu vidéo et la création de mods.
+            </p>
+
+            <h3>Problématique</h3>
+            <p>
+                Comment l’évolution de Minecraft Java Edition et de Java influence-t-elle
+                le développement, la compatibilité et la maintenance des mods Minecraft ?
+            </p>
+
+            <h3>Méthode de veille</h3>
+            <p>
+                Pour que ma veille soit régulière, je m’appuie sur des sources capables d’envoyer
+                des notifications : newsletter, flux RSS, notifications YouTube et alertes provenant
+                de médias spécialisés. Cela évite une simple vérification manuelle et me permet de suivre
+                les changements au fil du temps.
+            </p>
+        </div>
+
+        <div class="veille-journal">
+            <div class="veille-table-title">Journal de veille</div>
+
+            <div class="journal-row">
+                <div class="journal-date">Février 2026</div>
+                <div class="journal-content">
+                    <h3>Snapshots Minecraft 26.1</h3>
+                    <p>
+                        Suivi des snapshots pour repérer les changements techniques avant la version stable.
+                        Impact : anticiper les risques de compatibilité pour un mod.
+                    </p>
+                </div>
+            </div>
+
+            <div class="journal-row">
+                <div class="journal-date">Mars 2026</div>
+                <div class="journal-content">
+                    <h3>Préversions et sortie 26.1</h3>
+                    <p>
+                        Suivi des pre-releases puis de la sortie officielle. Impact : comprendre que les changements
+                        de datapack, resource pack ou JVM peuvent influencer les tests de mods.
+                    </p>
+                </div>
+            </div>
+
+            <div class="journal-row">
+                <div class="journal-date">Avril 2026</div>
+                <div class="journal-content">
+                    <h3>Hotfix et corrections</h3>
+                    <p>
+                        Suivi d’un correctif après sortie. Impact : une mise à jour mineure peut corriger un bug
+                        important, mais aussi demander de retester un projet.
+                    </p>
+                </div>
+            </div>
+
+            <div class="journal-row">
+                <div class="journal-date">Bilan intermédiaire</div>
+                <div class="journal-content">
+                    <h3>Ce que je surveille</h3>
+                    <p>
+                        Version Java demandée, changements techniques Minecraft, corrections après sortie,
+                        tendances de la communauté modding et impacts sur les outils de développement.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="veille-table articles-table">
+            <div class="veille-table-title">Sources suivies avec notifications</div>
+
+            <div class="veille-row veille-row-head">
+                <span>Source</span>
+                <span>Type de notification</span>
+                <span>Utilité pour ma veille</span>
+            </div>
+
+            <div class="veille-row">
+                <span><a href="https://www.minecraft.net/fr-fr/articles" target="_blank">Minecraft.net — Articles officiels</a></span>
+                <span>Newsletter / actualités officielles</span>
+                <span>Recevoir les annonces officielles sur les versions, snapshots, préversions et correctifs de Minecraft Java Edition.</span>
+            </div>
+
+            <div class="veille-row">
+                <span><a href="https://www.infoq.com/java/" target="_blank">InfoQ — Java</a></span>
+                <span>Newsletter / flux RSS</span>
+                <span>Suivre les nouveautés Java, les versions du JDK et les tendances importantes dans le développement logiciel.</span>
+            </div>
+
+            <div class="veille-row">
+                <span><a href="https://www.programmez.com/actualites/java-4" target="_blank">Programmez! — Java</a></span>
+                <span>Actualités / flux RSS</span>
+                <span>Suivre des articles francophones sur Java, le JDK et les outils utilisés par les développeurs.</span>
+            </div>
+
+            <div class="veille-row">
+                <span><a href="https://www.youtube.com/@TheMisterEpic" target="_blank">TheMisterEpic — YouTube</a></span>
+                <span>Abonnement + notifications YouTube</span>
+                <span>Suivre des vidéos d’actualité et d’analyse sur Minecraft.</span>
+            </div>
+
+            <div class="veille-row">
+                <span><a href="https://www.youtube.com/@AsianHalfSquat" target="_blank">AsianHalfSquat — YouTube</a></span>
+                <span>Abonnement + notifications YouTube</span>
+                <span>Suivre les nouveautés autour des mods Minecraft, des outils populaires et des tendances de la communauté modding.</span>
+            </div>
+        </div>
+
+        <div class="veille-table articles-table">
+            <div class="veille-table-title">Articles récents retenus — 3 derniers mois</div>
+
+            <div class="veille-row veille-row-head">
+                <span>Article</span>
+                <span>Date</span>
+                <span>Information retenue et impact</span>
+            </div>
+
+            <div class="veille-row">
+                <span><a href="https://www.minecraft.net/en-us/article/minecraft-26-1-snapshot-6" target="_blank">Minecraft 26.1 Snapshot 6</a></span>
+                <span>03/02/2026</span>
+                <span>
+                    <strong>Info :</strong> changements sur les mobs bébés et formats de données de monde.<br>
+                    <strong>Impact :</strong> certains mods liés aux entités, mondes de test ou données peuvent devoir être retestés.
+                </span>
+            </div>
+
+            <div class="veille-row">
+                <span><a href="https://www.minecraft.net/en-us/article/minecraft-26-1-snapshot-9" target="_blank">Minecraft 26.1 Snapshot 9</a></span>
+                <span>18/02/2026</span>
+                <span>
+                    <strong>Info :</strong> correction d’un crash lié aux entités sortant des limites verticales du monde.<br>
+                    <strong>Impact :</strong> les corrections de bugs peuvent changer le comportement observé en test.
+                </span>
+            </div>
+
+            <div class="veille-row highlight-row">
+                <span><a href="https://www.infoq.com/news/2026/02/java-26-so-far/" target="_blank">InfoQ — JDK 26 and JDK 27</a></span>
+                <span>20/02/2026</span>
+                <span>
+                    <strong>Info :</strong> JDK 26 est présenté comme une version non-LTS avec 10 JEPs. L’article cite notamment HTTP/3 dans l’API HTTP Client, Structured Concurrency, Lazy Constants, Vector API et la suppression de l’Applet API.<br>
+                    <strong>Impact :</strong> même si Minecraft ne change pas de version Java à chaque sortie, l’environnement Java évolue vite. Pour un projet de modding, il faut surveiller la version du JDK utilisée par Minecraft, les outils de build et les loaders.
+                </span>
+            </div>
+
+            <div class="veille-row">
+                <span><a href="https://www.minecraft.net/en-us/article/minecraft-26-1-pre-release-1" target="_blank">Minecraft 26.1 Pre-Release 1</a></span>
+                <span>10/03/2026</span>
+                <span>
+                    <strong>Info :</strong> préversion avec changements techniques, versions datapack/resource pack et composants.<br>
+                    <strong>Impact :</strong> les pre-releases aident à anticiper les adaptations avant une version stable.
+                </span>
+            </div>
+
+            <div class="veille-row">
+                <span><a href="https://www.minecraft.net/en-us/article/minecraft-26-1-pre-release-3" target="_blank">Minecraft 26.1 Pre-Release 3</a></span>
+                <span>17/03/2026</span>
+                <span>
+                    <strong>Info :</strong> corrections de bugs et ajustements avant la sortie officielle.<br>
+                    <strong>Impact :</strong> je peux repérer les corrections à tester si un comportement change dans le jeu.
+                </span>
+            </div>
+
+            <div class="veille-row">
+                <span><a href="https://www.minecraft.net/en-us/article/minecraft-java-edition-26-1" target="_blank">Minecraft Java Edition 26.1</a></span>
+                <span>24/03/2026</span>
+                <span>
+                    <strong>Info :</strong> sortie officielle avec contenu et éléments techniques, dont des options JVM et des changements liés à la lumière.<br>
+                    <strong>Impact :</strong> une version stable sert de base pour tester la compatibilité d’un mod.
+                </span>
+            </div>
+
+            <div class="veille-row">
+                <span><a href="https://www.minecraft.net/en-us/article/minecraft-java-edition-26-1-2" target="_blank">Minecraft Java Edition 26.1.2</a></span>
+                <span>09/04/2026</span>
+                <span>
+                    <strong>Info :</strong> hotfix corrigeant des problèmes critiques après la sortie officielle.<br>
+                    <strong>Impact :</strong> les correctifs mineurs sont importants car ils peuvent résoudre ou modifier des problèmes rencontrés par les joueurs et moddeurs.
+                </span>
+            </div>
+        </div>
+
+        <div class="veille-summary block">
+            <h3>Ce que j’ai appris</h3>
+            <p>
+                Cette veille m’a appris qu’un mod Minecraft dépend de plusieurs évolutions : version du jeu,
+                version Java, outils de build, loaders et correctifs. Je dois donc suivre les snapshots,
+                pre-releases, sorties officielles et hotfixs, mais aussi les évolutions du JDK pour comprendre
+                l’environnement technique autour du modding.
+            </p>
+        </div>
+    </section>
+
 
     <section id="contact" class="section contact">
         <div class="section-head">
-            <p class="section-number">06</p>
+            <p class="section-number">09</p>
             <h2>Contact</h2>
         </div>
 
@@ -296,10 +885,41 @@
     </section>
 </main>
 
+
+<div class="cv-modal" id="cvModal" aria-hidden="true">
+    <div class="cv-modal-box">
+        <div class="cv-viewer-head">
+            <span>CV - ENZO BERTRAND</span>
+            <button type="button" id="closeCvBtn">Fermer</button>
+        </div>
+
+        <object data="docs/cv_enzo_bertrand.pdf" type="application/pdf" class="cv-pdf">
+            <p>
+                Ton navigateur ne peut pas afficher le PDF directement.
+                <a href="docs/cv_enzo_bertrand.pdf" target="_blank">Clique ici pour l’ouvrir.</a>
+            </p>
+        </object>
+    </div>
+</div>
+
+
+
+<div class="game-modal" id="gameModal" aria-hidden="true">
+    <div class="game-modal-box">
+        <div class="game-viewer-head">
+            <span>Debug Invaders — Mini-jeu portfolio</span>
+            <button type="button" id="closeGameBtn">Fermer</button>
+        </div>
+
+        <iframe src="game/index.html" class="game-frame" title="Debug Invaders"></iframe>
+    </div>
+</div>
+
+
 <footer>
     <p>© 2026 — Enzo Bertrand — Portfolio BTS SIO SLAM</p>
 </footer>
 
-<script src="script.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>

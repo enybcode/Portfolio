@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Invaders</title>
+    <link rel="stylesheet" href="debug-invaders.css">
+</head>
+<body>
+    <main class="page">
+        <section class="intro-section">
+            <p class="small-title">Expérience interactive</p>
+            <h1>Debug Invaders</h1>
+        </section>
+
+        <section class="game-section" id="experience-interactive">
+            <div class="game-container">
+                <div class="game-header">
+                    <div class="hud-block">
+                        <p class="game-label">Score</p>
+                        <p id="score">0</p>
+                    </div>
+
+                    <div class="game-title">
+                        <h2>Debug Invaders</h2>
+                    </div>
+
+                    <div class="hud-block">
+                        <p class="game-label">Vies</p>
+                        <p id="lives" aria-label="Vies restantes"></p>
+                    </div>
+                </div>
+
+                <canvas id="gameCanvas" width="700" height="480">
+                    Votre navigateur ne supporte pas le canvas HTML5.
+                </canvas>
+
+                <div class="game-bottom">
+                    <p>Compétences : <span id="skills">0</span> / 10</p>
+                </div>
+
+                <div class="game-controls">
+                    <button id="startBtn" type="button">Lancer le mini-jeu</button>
+                    <p>Déplacement : flèches gauche/droite ou A/D — Tir : espace</p>
+                </div>
+
+                <div id="gameMessage" class="game-message"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="debug-invaders.js"></script>
+</body>
+</html>
