@@ -1486,14 +1486,9 @@ body.game-open {
     margin: 0;
 }
 
-.official-skill-doc {
-    margin-top: 28px;
-}
 
-.disabled-link {
-    pointer-events: none;
-    opacity: 0.65;
-}
+
+
 
 .enterprise-mission-list {
     display: grid;
